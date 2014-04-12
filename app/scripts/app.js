@@ -15,7 +15,7 @@ var app = angular
       })
       .when('/completePurchase', {
         templateUrl: 'views/completePurchase.html',
-        controller: 'MainCtrl'
+        controller: 'mainCtrl'
       })
       .when('/detailProduct', {
         templateUrl: 'views/detailProduct.html',
