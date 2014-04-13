@@ -1,0 +1,25 @@
+.slideBar {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	background-color: red;
+	list-style: none;
+	transition:.8s ease margin;
+	margin-left: -8em;
+}
+
+
+.landing__profile {
+	margin-bottom: 1em;
+	
+	@include clearfix;
+
+	img {@extend %float-l;}
+	div {@extend %float-l;
+		@extend %g-2-3;
+		padding-left: 1em;
+
+		.name { padding-right: 1em;}
+	}
+}
