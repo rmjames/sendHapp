@@ -1,3 +1,5 @@
+%ul-reset {list-style:none;margin:0; padding: 0;}
+
 .slideBar {
 	position: absolute;
 	top: 0;
@@ -6,7 +8,8 @@
 	background-color: red;
 	list-style: none;
 	transition:.8s ease margin;
-	//margin-left: -8em;
+	margin-left: -8em;
+	@extend %ul-reset;
 }
 
 
@@ -39,4 +42,36 @@
 	}
 }
 
+
+
+.person__profile {
+
+	.info {
+		margin-bottom: 1em;
+		@include clearfix;
+		img {@extend %float-l;}
+		div {@extend %float-l;
+		@extend %g-2-3;
+		padding-left: 1em;
+
+		.name {padding-right: 1em;}
+		.days {padding-left: 6.7em;}
+	}	
+	}
+}
+
+.person__checkboxes {
+	ul {
+		@extend %ul-reset;
+		@extend %float-l;
+		width: 45%;
+
+		
+		&:nth-child(2n+1) {margin-right: 5%;}
+
+		li {
+			margin-bottom: 1em;
+		}
+	}
+}
 
