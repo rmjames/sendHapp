@@ -1,10 +1,6 @@
 'use strict';
 
 angular.module('sendHappApp')
-  .controller('MainCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
-  });
+  .controller('login', function ($scope) {
+    $scope.auth = auth.login('twitter');
+ });
