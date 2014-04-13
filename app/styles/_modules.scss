@@ -12,7 +12,7 @@
 
 .landing__profile {
 	margin-bottom: 1em;
-	
+
 	@include clearfix;
 
 	img {@extend %float-l;}
@@ -20,6 +20,7 @@
 		@extend %g-2-3;
 		padding-left: 1em;
 
-		.name { padding-right: 1em;}
+		.name {padding-right: 1em;}
+		.days {padding-left: 6.7em;}
 	}
 }
