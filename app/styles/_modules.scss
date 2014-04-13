@@ -6,7 +6,7 @@
 	background-color: red;
 	list-style: none;
 	transition:.8s ease margin;
-	margin-left: -8em;
+	//margin-left: -8em;
 }
 
 
@@ -24,3 +24,19 @@
 		.days {padding-left: 6.7em;}
 	}
 }
+
+.person__header {
+
+	@include clearfix;
+
+	img {@extend %float-l;}
+	div {@extend %float-l;
+		@extend %g-2-3;
+		padding-left: 1em;
+
+		.name {padding-right: 1em;}
+		.days {padding-left: 6.7em;}
+	}
+}
+
+
