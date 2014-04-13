@@ -43,7 +43,6 @@
 }
 
 
-
 .person__profile {
 
 	.info {
@@ -75,3 +74,6 @@
 	}
 }
 
+.login {
+	@extend %button;
+}
